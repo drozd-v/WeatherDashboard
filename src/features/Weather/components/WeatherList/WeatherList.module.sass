@@ -1,0 +1,43 @@
+$color-button: write
+$color-error: red
+
+.notFound 
+    color: $color-error
+
+.nullSearch
+    margin: 50px
+    text-align: center
+    
+.weather 
+    display: flex
+    flex-wrap: wrap
+    margin-top: 20px
+    &Item 
+        display: flex
+        position: relative
+        border: 1px solid black
+        padding: 15px
+        margin: 10px
+        flex-direction: column
+        justify-content: space-evenly
+        align-items: center
+        & .citeText 
+            margin: 0
+        & .tempText 
+            margin: 6px
+        &:last-child
+            margin: 10px 0 10px 10px
+        & .button
+            display: none
+            position: absolute
+            right: 0
+            bottom: calc(100% - 10px)
+            border-radius: 15px
+            border: 1px solid red
+            background-color: $color-button
+            padding: 5px
+            outline: none
+        &:hover .button 
+            display: block
+        
+    
